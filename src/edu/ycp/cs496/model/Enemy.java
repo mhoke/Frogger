@@ -15,6 +15,7 @@ public class Enemy extends The_Superclass {
 		this.xSpeed = 10; // Enemy Location is current set to be static
 		this.ySpeed = 10; // in both directions
 		this.locations = locations;
+		prevVal = Terrain.PATH.getValue();
 	}
 
 	public void setLocation(Location loc){
