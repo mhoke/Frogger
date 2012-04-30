@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>edu.ycp.cs.webapp.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GameServlet</servlet-name>
+    <servlet-class>edu.ycp.cs.webapp.GameServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LevelSelectServlet</servlet-name>
+  	<servlet-class>edu.ycp.cs.webapp.LevelSelectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateGameServlet</servlet-name>
+    <servlet-class>edu.ycp.cs.webapp.UpdateGame</servlet-class>
+  </servlet>
+
+
+  <!-- Servlet mappings -->
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GameServlet</servlet-name>
+    <url-pattern>game</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LevelSelectServlet</servlet-name>
+  	<url-pattern>levelSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGameServlet</servlet-name>
+    <url-pattern>updateGame</url-pattern>
+  </servlet-mapping>
+</web-app>
