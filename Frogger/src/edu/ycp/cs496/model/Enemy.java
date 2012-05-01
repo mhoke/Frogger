@@ -8,14 +8,12 @@ public class Enemy extends The_Superclass {
 	private int ySpeed;
 	private List<Location> locations;
 	private int index = 0;
-	private int prevVal;
 	
 	public Enemy (Location loc, List<Location> locations){
 		this.loc = loc;
 		this.xSpeed = 10; // Enemy Location is current set to be static
 		this.ySpeed = 10; // in both directions
 		this.locations = locations;
-		prevVal = Terrain.PATH.getValue();
 	}
 
 	public void setLocation(Location loc){
@@ -56,16 +54,6 @@ public class Enemy extends The_Superclass {
 	
 	public int getIndex(){
 		return index;
-	}
-	
-	public void setPrevVal(int i)
-	{
-		prevVal = i;
-	}
-	
-	public int getPrevVal()
-	{
-		return prevVal;
 	}
 	
 	public Location move(){	//Changed here - make sure it works

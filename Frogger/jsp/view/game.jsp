@@ -12,18 +12,13 @@
 <html>
 	<head>
 		<title>Game</title>
-		<style type="text/css">
-		#canvas {
-			border: 6px solid black;
-		}
-		</style>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 		<!-- colors - BLACK, BLUE, YELLOW, RED, GREEN, WHITE -->
 		<script type="text/javascript">
 			var map = '${game.level.currentMap.encodedRepresentation}';
 			
 			var Grid_Size = 10;
-			var color = ['#000000', '#0000FF', '#FFFF00', '#FF0000', '#008000', '#008000', '#FFFFFF'];
+			var color = ['#000000', '#0000FF', '#FFD700', '#FF0000', '#00FF00', '#00FF00', '#FFFFFF'];
 			var currentColor = color[0];
 			var index, ch, colorIndex;
 			var keyPress = 0;
@@ -54,6 +49,9 @@
 						ch = map.charAt(index);
 						
 						colorIndex = ch.charCodeAt(0) - 'a'.charCodeAt(0);
+						
+						ctx.fillStyle = color[6];
+						ctx.fillRect(i * 50, (Grid_Size - j - 1) * 50, 50, 50);
 						 
 						currentColor = color[colorIndex];
 						ctx.fillStyle = currentColor;						
@@ -67,7 +65,16 @@
 							}
 							
 							ctx.beginPath();
-							ctx.arc(i * 50 + 25, (Grid_Size - j - 1) * 50 + 25, 25, 0, Math.PI * 2, true);
+							
+							if(colorIndex == 2)
+							{
+								ctx.arc(i * 50 + 25, (Grid_Size - j - 1) * 50 + 25, 10, 0, Math.PI * 2, true);
+							}
+							else
+							{
+								ctx.arc(i * 50 + 25, (Grid_Size - j - 1) * 50 + 25, 25, 0, Math.PI * 2, true);
+							}
+							
 							ctx.fill();
 						}
 						else
@@ -102,7 +109,7 @@
 					      {
 					      	// redraw the map
 					      	draw();
-					      	setTimeout("tick()", 300);
+					      	setTimeout("tick()", 250);
 					      }
 					      else
 					      {
@@ -120,7 +127,7 @@
 			});
 		</script>
 	</head>
-	<body onkeypress="keyfunction(event)">
+	<body onkeypress="keyfunction(event)" style="background-color:#003366">
 		<form name="Form" action="${pageContext.servletContext.contextPath}/game" method="post">
 			<div>
 				<canvas id="canvas" width="500" height="500"></canvas>
