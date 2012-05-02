@@ -645,7 +645,8 @@ public class Map {
 			mapArray[0][7] = Terrain.COLLECTIBLE.getValue();
 			mapArray[9][9] = Terrain.COLLECTIBLE.getValue();
 			break;
-		case 7:
+			
+		case 7: 
 			// Path
 			for (int i = 0; i < 2; i++){
 				for (int j = 0; j < 10; j++){
