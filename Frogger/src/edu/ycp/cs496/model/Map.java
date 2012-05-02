@@ -507,7 +507,7 @@ public class Map {
 					mapArray[i][j] = Terrain.PATH.getValue();
 				}
 			}
-			for (int i = 4; i < 6; i++){
+			for (int i = 3; i < 5; i++){
 				for (int j = 0; j < 10; j++){
 					mapArray[i][j] = Terrain.PATH.getValue();
 				}
@@ -643,7 +643,7 @@ public class Map {
 			
 			// Collectibles
 			mapArray[0][7] = Terrain.COLLECTIBLE.getValue();
-			mapArray[9][0] = Terrain.COLLECTIBLE.getValue();
+			mapArray[9][9] = Terrain.COLLECTIBLE.getValue();
 			break;
 		case 7:
 			// Path
