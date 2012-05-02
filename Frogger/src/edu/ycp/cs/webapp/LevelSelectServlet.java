@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import edu.ycp.cs.frogger.controller.LevelSelectController;
 import edu.ycp.cs496.model.Game;
 import edu.ycp.cs496.model.Level;
-import edu.ycp.cs496.model.persist.PersistenceException;
 
 public class LevelSelectServlet extends HttpServlet 
 {

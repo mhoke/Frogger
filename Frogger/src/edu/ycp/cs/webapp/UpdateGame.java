@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import edu.ycp.cs.frogger.controller.GameController;
 import edu.ycp.cs496.model.Game;
 import edu.ycp.cs496.model.Terrain;
-import edu.ycp.cs496.model.persist.PersistenceException;
 
 public class UpdateGame extends HttpServlet {
 	/**
