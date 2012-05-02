@@ -9,23 +9,28 @@
 		.error {
 			color: red;
 		}
+		
+		.text
+		{
+			color: white;
+		}
 
 		</style>
 	</head>
 
-	<body>
+	<body style="background-color:#003366">
 		<c:if test="${!empty errorMessage }">
 			<div class="error">${errorMessage }</div>
 		</c:if>
 		<form action="${pageContext.servletContext.contextPath}/login" method="post">
 			<table>
 			<tr>
-			<td>Username</td>
+			<td class="text">Username: </td>
 			<td><input type="text" name="usernameBox" size="12" value="${username}" /></td>
 			</tr>
 			
 			<tr>
-			<td>Password</td>
+			<td class="text">Password: </td>
 			<td><input type="password" name="passwordBox" size="12" value="${password}" /></td>
 			</tr>
 			

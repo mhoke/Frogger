@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Level {
 	private Map currentMap;
 	private Player currentPlayer;
-	private ArrayList<Collectible> collectibles; //collectibles that have not been collected yet
+	private ArrayList<Collectible> collectibles;
 	private ArrayList<Enemy> enemies;
 	private int levelNumber; 
 	

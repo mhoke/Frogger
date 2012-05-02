@@ -5,7 +5,7 @@
 		<title>Level Select</title>
 	</head>
 	
-	<body>
+	<body style="background-color:#003366">
 		<form action="${pageContext.servletContext.contextPath}/levelSelect" method="post">
 			<table>
 				<tr>
