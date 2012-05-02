@@ -34,13 +34,5 @@
 	<classpathentry kind="lib" path="lib/jetty/jsp/jetty-jsp-2.1-7.4.4.v20110707.jar"/>
 	<classpathentry kind="lib" path="lib/jetty/jsp/org.apache.jasper.glassfish_2.1.0.v201007080150.jar"/>
 	<classpathentry kind="lib" path="lib/jetty/jsp/org.apache.taglibs.standard.glassfish_1.2.0.v201004190952.jar"/>
-	<classpathentry kind="lib" path="H:/CS496/android-sdk/platforms/android-10/android.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="file:/C:/Program Files (x86)/Android/android-sdk/docs/reference"/>
-		</attributes>
-		<accessrules>
-			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
-		</accessrules>
-	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
