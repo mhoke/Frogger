@@ -7,5 +7,15 @@
     <string name="Password">Password: </string>
     <string name="Login">Login</string>
     <string name="CreateAccount">Create Account</string>
+    <string name="Level1">Level 1</string>
+    <string name="Level2">Level 2</string>
+    <string name="Level3">Level 3</string>
+    <string name="Level4">Level 4</string>
+    <string name="Level5">Level 5</string>
+    <string name="Level6">Level 6</string>
+    <string name="Level7">Level 7</string>
+    <string name="Level8">Level 8</string>
+    <string name="Level9">Level 9</string>
+    <string name="Level10">Level 10</string>
 
 </resources>
