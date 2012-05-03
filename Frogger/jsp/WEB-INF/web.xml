@@ -22,6 +22,10 @@
     <servlet-name>UpdateGameServlet</servlet-name>
     <servlet-class>edu.ycp.cs.webapp.UpdateGame</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VerifyLoginServlet</servlet-name>
+  	<servlet-class>edu.ycp.cs.webapp.VerifyLoginServlet</servlet-class>
+  </servlet>
 
 
   <!-- Servlet mappings -->
@@ -40,5 +44,9 @@
   <servlet-mapping>
     <servlet-name>UpdateGameServlet</servlet-name>
     <url-pattern>updateGame</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VerifyLoginServlet</servlet-name>
+  	<url-pattern>verifyLogin</url-pattern>
   </servlet-mapping>
 </web-app>
