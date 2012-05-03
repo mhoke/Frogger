@@ -10,7 +10,8 @@ public class LevelSelectActivity extends Activity {
 		setDefaultView();
 	}
 
-	public void setDefaultView() {
+	public void setDefaultView() 
+	{
 		setContentView(R.layout.levelselect);
 	}
 }

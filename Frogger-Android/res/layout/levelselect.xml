@@ -22,7 +22,8 @@
         android:layout_alignBottom="@+id/button1"
         android:layout_marginLeft="46dp"
         android:layout_toRightOf="@+id/button1"
-        android:text="@string/Level2" />
+        android:text="@string/Level2" 
+        android:enabled="false"/>"
 
     <Button
         android:id="@+id/Button02"
