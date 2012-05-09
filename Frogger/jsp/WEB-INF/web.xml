@@ -26,7 +26,14 @@
   	<servlet-name>VerifyLoginServlet</servlet-name>
   	<servlet-class>edu.ycp.cs.webapp.VerifyLoginServlet</servlet-class>
   </servlet>
-
+  <servlet>
+  	<servlet-name>MaxLevelServlet</servlet-name>
+  	<servlet-class>edu.ycp.cs.webapp.MaxLevelServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>updateMaxLevel</servlet-name>
+      <servlet-class>edu.ycp.cs.webapp.updateMaxLevel</servlet-class>
+  </servlet>
 
   <!-- Servlet mappings -->
   <servlet-mapping>
@@ -48,5 +55,13 @@
   <servlet-mapping>
   	<servlet-name>VerifyLoginServlet</servlet-name>
   	<url-pattern>verifyLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MaxLevelServlet</servlet-name>
+  	<url-pattern>maxLevel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>updateMaxLevel</servlet-name>
+      <url-pattern>updateMaxLevel</url-pattern>
   </servlet-mapping>
 </web-app>
